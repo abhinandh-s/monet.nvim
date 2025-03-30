@@ -1,0 +1,143 @@
+*monet.txt*  A dark Neovim colorscheme inspired by Monet
+
+================================================================================
+CONTENTS                                                       *monet-contents*
+
+  1. Introduction ....................................... |monet-introduction|
+  2. Installation ...................................... |monet-installation|
+  3. Usage ............................................ |monet-usage|
+  4. Color Palette .................................... |monet-colors|
+  5. Highlight Groups ................................. |monet-highlights|
+  6. Supported Plugins ................................ |monet-plugins|
+  7. License .......................................... |monet-license|
+
+================================================================================
+1. Introduction                                             *monet-introduction*
+
+Monet is a dark Neovim colorscheme inspired by the muted, natural tones found in
+Claude Monet's landscape paintings. It provides a calm, soothing experience
+while maintaining good contrast for readability.
+
+This theme features:
+- A dark background with earthy tones
+- Carefully selected syntax highlighting colors
+- Support for native LSP diagnostics
+- Basic Treesitter support
+- Clean, distraction-free UI elements
+
+================================================================================
+2. Installation                                             *monet-installation*
+
+With Packer.nvim: >lua
+  use 'abhinandh-s/monet.nvim'
+<
+
+With lazy.nvim: >lua
+  {
+    'abhinandh-s/monet.nvim',
+    lazy = false,
+    priority = 1000,
+  }
+<
+
+With vim-plug: >vim
+  Plug 'abhinandh-s/monet.nvim'
+<
+
+Manual installation:
+  Clone the repository into your Neovim configuration directory:
+  >bash
+  git clone https://github.com/abhinandh-s/monet.nvim.git \
+    ~/.config/nvim/pack/plugins/start/monet.nvim
+<
+
+================================================================================
+3. Usage                                                         *monet-usage*
+
+To enable the colorscheme, add one of the following to your configuration:
+
+In Lua: >lua
+  vim.cmd.colorscheme 'monet'
+<
+
+In VimScript: >vim
+  colorscheme monet
+<
+
+The colorscheme is designed to be simple and doesn't have configuration options.
+
+================================================================================
+4. Color Palette                                               *monet-colors*
+
+The color palette used by Monet is inspired by natural landscapes:
+
+Background colors:
+  bg0         #272e33    Main background
+  bg1         #2e383c    Lighter background
+  bg2         #374145    Selection background
+  bg3         #414b50    Comments, line numbers
+  bg4         #495156    Dark foreground
+
+Foreground colors:
+  fg          #d3c6aa    Main text
+  fg_dim      #9da9a0    Less prominent text
+  fg_dark     #7f897d    Even less prominent text
+
+Syntax colors:
+  red         #e67e80    Error, keyword
+  orange      #e69875    Number, boolean
+  yellow      #dbbc7f    Warning, string
+  green       #a7c080    Success, function
+  aqua        #83c092    Escape character
+  blue        #7fbbb3    Method
+  purple      #d699b6    Constant
+
+Status line colors:
+  statusline1 #2d353b    Default status line
+  statusline2 #343f44    Inactive status line
+  statusline3 #3a464c    Selected status line
+
+================================================================================
+5. Highlight Groups                                         *monet-highlights*
+
+Monet applies colors to standard Vim highlight groups to provide a consistent
+appearance across different file types.
+
+Editor UI:
+  Normal, NormalFloat, NormalNC, Cursor, CursorLine, CursorColumn, CursorLineNr,
+  LineNr, SignColumn, StatusLine, StatusLineNC, TabLine, TabLineFill,
+  TabLineSel, Search, IncSearch, Visual, VisualNOS, Folded, FoldColumn,
+  NonText, SpecialKey, ErrorMsg, WarningMsg, MoreMsg, Question, Pmenu, PmenuSel,
+  PmenuSbar, PmenuThumb, VertSplit, WildMenu, DiffAdd, DiffChange, DiffDelete,
+  DiffText, SpellBad, SpellCap, SpellRare, SpellLocal
+
+Syntax:
+  Comment, String, Character, Number, Boolean, Float, Identifier, Function,
+  Statement, Conditional, Repeat, Label, Operator, Keyword, Exception,
+  PreProc, Include, Define, Macro, PreCondit, Type, StorageClass, Structure,
+  Typedef, Special, SpecialChar, Tag, Delimiter, SpecialComment, Debug,
+  Underlined, Ignore, Error, Todo
+
+LSP:
+  DiagnosticError, DiagnosticWarn, DiagnosticInfo, DiagnosticHint,
+  DiagnosticUnderlineError, DiagnosticUnderlineWarn, DiagnosticUnderlineInfo,
+  DiagnosticUnderlineHint
+
+================================================================================
+6. Supported Plugins                                          *monet-plugins*
+
+Monet provides basic support for:
+
+  - Nvim LSP (via standard diagnostic highlights)
+  - Treesitter (via @highlight groups)
+
+Additional plugins may work without specific customization due to highlight
+group inheritance.
+
+================================================================================
+7. License                                                    *monet-license*
+
+Distributed under the MIT License.
+See LICENSE file for more information.
+
+ vim:tw=78:ts=8:ft=help:norl:
