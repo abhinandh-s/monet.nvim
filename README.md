@@ -4,7 +4,7 @@ A dark theme for Neovim inspired by Monet's paintings with a soothing color pale
 
 ## Screenshots
 
-(Add screenshots here)
+![how monet looks](./assets/monet.jpg) 
 
 ## Installation
 
