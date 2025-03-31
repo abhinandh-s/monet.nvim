@@ -1,6 +1,6 @@
 local M = {}
 
--- Color palette inspired by Everforest but renamed for Monet theme
+-- Color palette for Monet theme
 M.colors = {
   -- Base colors
   bg0 = "#1b181f",       -- Dark background
@@ -38,45 +38,12 @@ M.colors = {
   none = "NONE",
 
   just = {
-    crust = "#1b181f", -- mirage
-    base = "#2D2636",  -- charade
-    red = "#e52e71",
     white = "#FFFDFF",
-  },
-  latte = {
-    rosewater = "#dc8a78",
-    flamingo = "#dd7878",
-    pink = "#ea76cb",
-    mauve = "#8839ef",
-    red = "#d20f39",
-    maroon = "#e64553",
-    peach = "#fe640b",
-    yellow = "#df8e1d",
-    green = "#40a02b",
-    teal = "#179299",
-    sky = "#04a5e5",
-    sapphire = "#209fb5",
-    blue = "#1e66f5",
-    lavender = "#7287fd",
-    text = "#4c4f69",
-    subtext1 = "#5c5f77",
-    subtext0 = "#6c6f85",
-    overlay2 = "#7c7f93",
-    overlay1 = "#8c8fa1",
-    overlay0 = "#9ca0b0",
-    surface2 = "#acb0be",
-    surface1 = "#bcc0cc",
-    surface0 = "#ccd0da",
-    base = "#eff1f5",
-    mantle = "#e6e9ef",
-    crust = "#dce0e8",
-  },
-  mocha = {
     rosewater = "#f5e0dc",
     flamingo = "#f2cdcd",
     pink = "#f5c2e7",
     mauve = "#cba6f7",
-    red = "#f38ba8",
+    red = "#e52e71",
     maroon = "#eba0ac",
     peach = "#fab387",
     yellow = "#f9e2af",
@@ -96,10 +63,9 @@ M.colors = {
     surface1 = "#45475a",
     surface0 = "#313244",
     base = "#1e1e2e",
-    mantle = "#181825",
-    crust = "#11111b",
+    mantle = "#2D2636", -- charade
+    crust = "#1b181f",  -- mirage
   },
-
 }
 
 return M

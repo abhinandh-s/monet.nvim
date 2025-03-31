@@ -7,11 +7,6 @@ local highlight = vim.api.nvim_set_hl
 
 -- Apply colors to highlight groups
 function monet.setup()
-  -- Clear existing highlights
-  if vim.fn.exists('syntax_on') then
-    vim.cmd('syntax reset')
-  end
-
   -- Set colorscheme name
   vim.g.colors_name = 'monet'
 
