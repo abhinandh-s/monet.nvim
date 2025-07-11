@@ -44,6 +44,7 @@ M.colors = {
     pink = "#f5c2e7",
     mauve = "#cba6f7",
     red = "#e52e71",
+    mochared = "#f38ba8",
     maroon = "#eba0ac",
     peach = "#fab387",
     yellow = "#f9e2af",

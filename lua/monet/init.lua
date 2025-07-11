@@ -13,14 +13,14 @@ function monet.setup()
   -- Editor highlighting groups
   local editor_syntax = {
     -- Editor
-    Normal = { fg = colors.fg, bg = colors.bg0 },
+    Normal = { fg = colors.just.subtext0, bg = colors.bg0 },
     NormalFloat = { fg = colors.fg, bg = colors.bg1 },
     NormalNC = { fg = colors.fg, bg = colors.bg0 },
 
     -- Cursor
     Cursor = { fg = colors.bg0, bg = colors.fg },
-    CursorLine = { bg = colors.bg1 },
-    CursorColumn = { bg = colors.bg1 },
+    CursorLine = { bg = colors.just.mantle },
+    CursorColumn = { bg = colors.just.teal },
     CursorLineNr = { fg = colors.yellow, bold = true },
 
     -- Line numbers and signs
@@ -124,6 +124,28 @@ function monet.setup()
     Ignore = { fg = colors.none },
     Error = { fg = colors.red, bold = true },
     Todo = { fg = colors.yellow, bold = true, italic = true },
+
+    -- Neorg
+    ["@neorg.headings.1.prefix"] = { fg = colors.just.red, bold = true },
+    ["@neorg.headings.2.prefix"] = { fg = colors.just.red, bold = true },
+    ["@neorg.headings.3.prefix"] = { fg = colors.just.red, bold = true },
+    ["@neorg.headings.4.prefix"] = { fg = colors.just.red, bold = true },
+    ["@neorg.headings.5.prefix"] = { fg = colors.just.red, bold = true },
+    ["@neorg.headings.6.prefix"] = { fg = colors.just.red, bold = true },
+    ["@neorg.headings.1.title"] =  { fg = colors.just.red, bold = true },
+    ["@neorg.headings.2.title"] =  { fg = colors.just.red, bold = true },
+    ["@neorg.headings.3.title"] =  { fg = colors.just.red, bold = true },
+    ["@neorg.headings.4.title"] =  { fg = colors.just.red, bold = true },
+    ["@neorg.headings.5.title"] =  { fg = colors.just.red, bold = true },
+    ["@neorg.headings.6.title"] =  { fg = colors.just.red, bold = true },
+    ["@neorg.quotes.1.prefix"] =  { fg = colors.just.yellow, bold = true },
+    ["@neorg.quotes.2.prefix"] =  { fg = colors.just.yellow, bold = true },
+    ["@neorg.quotes.3.prefix"] =  { fg = colors.just.yellow, bold = true },
+    ["@neorg.quotes.4.prefix"] =  { fg = colors.just.yellow, bold = true },
+    ["@neorg.quotes.5.prefix"] =  { fg = colors.just.yellow, bold = true },
+    ["@neorg.quotes.6.prefix"] =  { fg = colors.just.yellow, bold = true },
+    ["@neorg.quotes.1.content"] =  { fg = colors.just.subtext0 },
+    ["@neorg.tags.ranged_verbatim.document_meta.title"] =  { fg = colors.just.mochared },
   }
 
   -- Apply editor and syntax highlights
